@@ -4,7 +4,7 @@ from typing import Any, Dict
 from litellm import completion
 
 # You can replace these with other models as needed but this is the one we suggest for this lab.
-MODEL = "groq/llama-3.3-70b-versatile"
+MODEL = "groq/openai/gpt-oss-120b"
 
 api_key = "hardcoded API_KEY HERE"
 

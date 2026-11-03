@@ -21,7 +21,7 @@ The code implements a Flask web application that exposes an API endpoint for gen
 itinerary for a given destination. The API accepts a destination string and returns a JSON response
 containing high-level travel information.
 
-To generate this response, you will call an LLM. We suggest Meta's [Llama](https://www.llama.com/), hosted
+To generate this response, you will call an LLM. We suggest OpenAI's open-weight [gpt-oss](https://openai.com/index/introducing-gpt-oss/) model, hosted
 by [Groq](https://groq.com/), via [LiteLLM](https://docs.litellm.ai/docs/) to abstract client-specific
 details.
 
@@ -63,7 +63,7 @@ in `.gitignore`.
 
 ## Implement the call to the LLM
 Using LiteLLM, implement the logic in `analyze.py` to call an LLM. We suggest
-`groq/llama-3.3-70b-versatile`, but you're free to use others.
+`groq/openai/gpt-oss-120b`, but you're free to use others.
 
 Your implementation should:
 - Make at least one LLM call using LiteLLM.
